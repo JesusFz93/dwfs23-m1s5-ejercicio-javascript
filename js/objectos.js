@@ -76,10 +76,64 @@
 // console.log(personaApellidoPaterno);
 
 // Ejercicio express
-const objeto = {
-  estrellas: 34,
-  calle: "Doctores",
-  numeros: [1, 4, 7],
+// const objeto = {
+//   estrellas: 34,
+//   calle: "Doctores",
+//   numeros: [1, 4, 7],
+//   mensaje: "Informacion obtenida",
+// };
+
+// const { mensaje: msg } = objeto;
+
+// // console.log(msg);
+
+// const hobbies = ["Nadar", "Pescar", "Futbol"];
+// console.log(hobbies);
+
+// const [hobby, sdadsasd, hobbyFavorito] = hobbies;
+
+// console.log(hobbyFavorito);
+
+// const hobbieFavorito = hobbies[1];
+// console.log(hobbieFavorito);
+
+// Ejercicio 2
+// const persona = {
+//   nombre: "Roberto",
+//   apellidoPaterno: "Gonzalez",
+//   edad: 27,
+// };
+
+// console.log(persona);
+
+// const agregarAtributo = (clave, valor) => {
+//   if (persona[clave]) {
+//     console.log("Esta propiedad ya existe");
+//   } else {
+//     persona[clave] = valor;
+//   }
+// };
+
+// agregarAtributo("nombre", "Javier");
+
+// console.log(persona);
+
+// Ejercicio 3
+const libros = [];
+
+const agregarLibro = (nombreLibro, autorLibro) => {
+  const libro = {
+    nombre: nombreLibro,
+    autor: autorLibro,
+  };
+
+  libros.push(libro);
 };
 
-console.log(calle);
+const imprimirLibros = () => {
+  console.log(libros);
+};
+
+// agregarLibro("El Quijote", "Cervantes");
+// agregarLibro("Odisea", "Homero");
+// imprimirLibros();
